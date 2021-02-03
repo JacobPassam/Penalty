@@ -1,0 +1,6 @@
+venv/
+run/
+.DS_Store
+__pycache__
+.idea/
+*.iml
