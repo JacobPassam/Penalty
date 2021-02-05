@@ -75,7 +75,7 @@ class Game:  # Class to represent a game being played.
 
         # Create a FinalScore and write it to the file.
         score = FinalScore(self.prefManager.get_preference('PlayerName'), self.playerScore, self.keeperScore,
-                           datetime.now())
+                           datetime.now().strftime("%T %d-%b-%Y"))
 
         self.scoreHandler.write_score(score)
 
