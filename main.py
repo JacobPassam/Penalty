@@ -16,6 +16,6 @@ prefManager.load_preferences()
 # Load scores file manager
 scoresFile = ScoresFileHandler()
 
-# Infinitely the main menu until the user quits. (Option 5 or Ctrl+C)
+# Infinitely display the main menu until the user quits. (Option 5 or Ctrl+C)
 while True:
     mainMenu.do_menu(prefManager, scoresFile)
