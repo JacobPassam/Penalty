@@ -1,7 +1,7 @@
 from util import menuUtil
 from instructions import instructions
 from pref import preferencesFrontend
-from scores import viewScores
+from scores import scoresMenu
 from game.game import Game
 
 MENU_OPTIONS = ["Play the Game", "See instructions", "Edit your preferences", "View scores data",
@@ -29,7 +29,7 @@ def do_menu(prefManager, scoresFile):
 
     elif option == 4:
         # View scores data
-        viewScores.view_all_scores(scoresFile)
+        scoresMenu.do_menu(scoresFile)
 
     elif option == 5:
         # Exit
